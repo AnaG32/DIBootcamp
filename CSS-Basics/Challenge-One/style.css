@@ -1,0 +1,12 @@
+body {
+    background-color: rgb(93, 183, 243);
+}
+ul {
+    list-style: none;
+}
+p {
+    font-size: 20px;
+}
+span {
+    font-size: 2em;
+}

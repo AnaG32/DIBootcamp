@@ -1,0 +1,37 @@
+body {
+    background-color: rgb(235, 149, 100);
+}
+.container {
+    width: 600px;
+    height: auto;
+    background-color: rgb(237, 241, 198);
+    border-style: dotted;
+    padding: 16px;
+    margin-top: 50px;
+    margin-left: 600px;
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+}
+hr {
+    border-style: dotted;
+}
+
+ul {
+    list-style: none;
+    font-style: italic;
+}
+p {
+    font-size: 20px;
+}
+span {
+    font-size: 2em;
+}
+.copyright {
+    font-size: 15px;
+    text-align: center;
+}
