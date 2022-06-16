@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5f0;
+    font-family: 'Quicksand', sans-serif;
+    color: #393939;
+}
+.navbar {
+    height: 100px;
+	padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(211, 157, 42);
+}
+.navbar h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 16px;
+}
+.navbar h1 a {
+    List-style: none;
+    text-decoration: none;
+    color: #393939;
+}
+.navbar ul li a {
+    list-style: none;
+    text-decoration: none;
+    color: #393939;
+}
+
+.navbar li {
+	display: flex;
+	display: inline-block;
+	justify-content: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+.navbar ul li a:hover {
+   color: rgb(211, 157, 42);
+   font-size: 20px;
+}
+
+.maincontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px;
+}
+.content {
+    text-align: center;
+}
+.content h1 {
+    font-size: 50px;
+    margin-top: 200px;
+}
+.content p {
+    font-size: 26px;
+    margin: 30px;
+}
+.image {
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+.image img {
+    border-radius: 6px;
+    height: 600px;
+    width: auto;
+    border-bottom: 3px solid #adadad;
+    border-right: 3px solid #adadad;
+}
+#button {
+    width: 150px;
+    height: 36px;
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: #fff;
+    border: 1px solid #d5d9d9;
+    border-radius: 8px;
+    box-shadow: rgba(213, 217, 217, .5) 0 5px 5px 0;
+    color: #0f1111;
+    cursor: pointer;
+    text-align: center;
+
+}
+#button:hover {
+    width: 200px;
+    height: 50px;
+    font-size: 26px;
+}
+
+.bookscontent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 180px;
+    margin-bottom: 150PX;
+}
+
+.bookscontent img {
+    width: auto;
+    height: 350px;
+    padding: 20px;
+    transition:all 1s;
+}
+.bookscontent img:hover {
+    transform: scale(1.1);
+}
+.footer {
+    text-align: center;
+    padding: 0px 40px; 
+}
+.footer p {
+    margin-top: 20px;
+    color: #7a7a7a;
+    display: flex;
+    display: inline-block;
+    margin-top: 90px;
+    padding: 20px;
+}
