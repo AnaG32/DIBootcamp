@@ -1,0 +1,76 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;;
+}
+
+.content {
+    background: url(./black-widow.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.logo {
+    width: 500px;
+    position: absolute;
+    top: 16%;
+    left: 12%;
+}
+.text {
+    text-align: justify;
+    color: white;
+    padding-top: 240px;
+}
+.text p {
+    font-size: 18px;
+    margin-left: 50px;
+    margin-top: 150px;
+    margin-right: 900px;
+}
+
+button {
+    background-color: rgba(0,0,0,0.4);
+    margin: 90px 400px;
+    width: 150px;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 12px;
+    border-radius: 30px;
+    color: whitesmoke;
+    border: 2px solid white;
+    transition: 0.3s;
+}
+button:hover {
+    width: 150px;
+    color: red;
+    transform: scale(1.1);
+}
+.navbar {
+    width: auto;
+    height: 40px;
+    top: 0;
+    margin-left: 40px;
+    border-radius: 1px solid #fff;
+    cursor: pointer;
+    position: absolute;
+}
+.navbar ul li {
+    list-style: none;
+    margin-right: 30px;
+    display: inline-block;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.navbar li {
+	display: inline-block;
+    margin-top: 30px;
+    padding: 20px;
+}
+.navbar ul li a:hover {
+   color: red;
+   font-size: 26px;
+}

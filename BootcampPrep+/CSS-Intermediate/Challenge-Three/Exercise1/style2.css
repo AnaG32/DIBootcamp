@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 30px;
+    padding: 10px;
+}
+.container div {
+    margin: 16px;
+    text-align: center;
+    display: inline-block;
+}
+
+.container .red {
+    background-color: darkred;
+    width: 500px;
+    height: 180px;
+}
+
+.container .blue {
+    background-color: rgb(54, 124, 151);
+    width: 1200px;
+    height: 180px;   
+}
+.container .yellow {
+    background-color: rgb(192, 192, 22);
+    width: 95%;
+    height: 180px;
+    margin: 10px;
+}
