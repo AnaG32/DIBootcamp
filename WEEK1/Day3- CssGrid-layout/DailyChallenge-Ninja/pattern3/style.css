@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.purple {
+    background: linear-gradient(45deg, rgb(114, 6, 136), rgb(12, 12, 12));
+    width: 100px;
+    height: 100px;
+}
+
+.black {
+    background-color: rgb(0, 0, 0);
+    width: 100px;
+    height: 100px;
+}
+.blue {
+    background-color: rgb(12, 8, 75);
+    width: 100px;
+    height: 100px;
+}

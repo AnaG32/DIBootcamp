@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+body {
+    padding: 10px;
+}
+.orange {
+    background-color: orange;
+    width: 100px;
+    height: 100px;
+}
+
+.salmon {
+    background-color: salmon;
+    width: 100px;
+    height: 100px;
+}
+
+.brown {
+    background-color: brown;
+    width: 100px;
+    height: 100px;
+}

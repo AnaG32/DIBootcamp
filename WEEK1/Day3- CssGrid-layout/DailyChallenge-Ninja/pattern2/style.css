@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+.lightgrey {
+    background-color: rgb(192, 192, 192);
+    width: 100px;
+    height: 100px;
+}
+
+.grey {
+    background-color: rgb(150, 150, 150);
+    width: 100px;
+    height: 100px;
+}
+
+.darkgrey {
+    background-color: rgb(78, 78, 78);
+    width: 100px;
+    height: 100px;
+}
+.black {
+    background-color: rgb(0, 0, 0);
+    width: 100px;
+    height: 100px;
+}
