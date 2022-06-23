@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anek Malayalam', sans-serif;
+    font-size: 18px;
+}
+
+.mainContainer {
+    padding: 10px 100px 10px 100px;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 
+        "sidebar  container container container";
+    font-size: 16px;
+    background: black;
+    gap: 0.5rem;
+}
+.sidebar {
+    grid-area: sidebar;
+    padding: 30px;
+    background: #ad51b9;
+}
+.sidebarGrid {
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 1fr 0.5fr;
+    grid-template-areas:
+        "img"
+        "name"
+        "adress"
+        "skills"
+        "language";
+    text-align: center;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.6fr 0.8fr 3fr;
+    grid-template-areas: 
+        "profile"
+        "education"
+        "experience";
+    gap: 0.5rem;
+}
+
+#profile {
+    background-color: white;
+    grid-area: profile;
+    padding: 20px;
+}
+#education {
+    background-color:  white;
+    grid-area: education;
+    padding: 20px;
+    text-align: left;
+}
+#experience {
+    background-color: white;
+    grid-area: experience;
+    padding: 20px;
+}
+
+
+#picture img {
+    height: 180px;
+    border-radius: 12px;
+}
+
+.name span {
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-left: 55px;
+}
+#surname {
+    font-weight: bold;
+    color: #ffffff;
+    padding-left: 26px;
+    margin-top: -20px;
+}
+
+#pinkSquare {
+    width: 30px;
+    height: 200px;
+    background-color: white;
+    position: absolute;
+    margin-left: 70px;
+    margin-top: 100px;
+}
+
+.adress ul li {
+    list-style: none;
+    text-align: left;
+}
+
+.adress i {
+    padding: 10px;
+}
+
+.skills {
+    text-align: left;
+}
+.skills ul li {
+    list-style: none;
+}
+.skills, .language {
+    text-align: left;
+}
+.skills ul li {
+    list-style: none;
+}
+.language ul li {
+    list-style: none;
+}
+.sidebar h1 {
+    color: white;
+    font-size: 30px;
+    margin: 10px;
+}
+
+
+
+
+@media only screen and (max-width:550px) {
+    .mainContainer {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1fr;
+        grid-template-areas: 
+        "sidebar"
+        "profile"
+        "education"
+        "skills"
+        "experience";
+    }
+}
+@media (max-width:1629px){
+    #pinkSquare {
+        display: none;
+    }
+}
+    
+

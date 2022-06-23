@@ -13,25 +13,28 @@
 }
 .logo {
     width: 500px;
-    position: absolute;
-    top: 16%;
-    left: 12%;
+    position: relative;
+    left: 20%;
 }
 .text {
     text-align: justify;
     color: white;
-    padding-top: 240px;
+    padding-top: 100px;
+    width: 800px;
+    
 }
 .text p {
     font-size: 18px;
-    margin-left: 50px;
-    margin-top: 150px;
-    margin-right: 900px;
-}
+    margin-left: 100px;
+    padding-top: 30px;
+    display: flex;
+    justify-self: left;
+    text-justify: justify;
+}   
 
 button {
     background-color: rgba(0,0,0,0.4);
-    margin: 90px 400px;
+    margin: 60px 400px;
     width: 150px;
     font-size: 20px;
     font-weight: 300;
@@ -51,7 +54,6 @@ button:hover {
     height: 40px;
     top: 0;
     margin-left: 40px;
-    border-radius: 1px solid #fff;
     cursor: pointer;
     position: absolute;
 }
@@ -75,6 +77,8 @@ button:hover {
    font-size: 26px;
 }
 
-@media (max-width:320px){
-    
-  }
+@media (max-width:768px){
+    .text {
+        color: red;
+    }
+}

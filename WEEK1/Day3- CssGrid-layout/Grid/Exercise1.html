@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 1</title>
+</head>
+<body>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      grid-template-rows: repeat(3, 1fr);
+      margin: 40px;
+      gap: 40px;
+    }
+    .c1 {
+      background-color: darkcyan;
+      padding: 5em;
+    }
+    .c2 {
+      background-color: darkmagenta;
+      padding: 5em;
+    }
+    .c3 {
+      background-color: lightblue;
+      padding: 5em;
+      margin: 40px;
+      margin-top: 40px;
+    }
+
+  </style>
+
+    <div class="container">
+        <div class="c1">Content1</div>
+        <div class="c2">Content2</div>
+
+        <div class="c1">Content1</div>
+        <div class="c2">Content2</div>
+
+        <div class="c1">Content1</div>
+        <div class="c2">Content2</div>
+    </div>
+    <div class="c3">Content3</div>
+</body>

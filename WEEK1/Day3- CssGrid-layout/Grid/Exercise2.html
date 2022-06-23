@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 2</title>
+</head>
+<body>
+    <style>
+      * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+  padding: 20px 140px 20px 140px;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.2fr 1.2fr 1fr 1fr;
+    grid-template-areas: 
+        "nav nav nav nav"
+        "hero main main main"
+        "sidebar main main main"
+        "sidebar extra extra extra"
+        "images images images post" 
+        "footer footer footer footer"
+        ;
+    grid-gap: 0.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+nav {
+    background-color: rgb(79, 1, 131);
+    grid-area: nav;
+    padding: 20px;
+}
+main {
+    background-color: rgb(93, 93, 231);
+    grid-area: main;
+    padding: 20px;
+}
+#sidebar {
+    background-color: rgb(155, 84, 221);
+    grid-area: sidebar;
+    padding: 20px;
+}
+#hero {
+    background-color: rgb(255, 161, 37);
+    grid-area: hero;
+    padding: 20px;
+}
+#extra {
+    background-color: rgb(248, 112, 248);
+    grid-area: extra;
+    padding: 20px;
+}
+#images {
+    background-color: rgb(3, 182, 12);
+    grid-area: images;
+    padding: 20px;
+}
+#post {
+    background-color: rgb(13, 204, 252);
+    grid-area: post;
+    padding: 20px;
+}
+footer {
+    background-color: rgb(185, 14, 143);
+    grid-area: footer;
+    padding: 20px;
+}
+@media only screen and (max-width:550px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1fr;
+        grid-template-areas: 
+        "nav"
+        "sidebar"
+        "main"
+        "hero"
+        "extra" 
+        "images"
+        "post"
+        "footer";
+    }
+}
+    </style>
+    <div class="container">
+        <nav >Header</nav>
+        <main>Main content</main>
+        <div id="sidebar">Sidebar</div>
+        <div id="hero">Hero</div>
+        <div id="extra">Extra Content</div>
+        <div id="images">Related Images</div>
+        <div id="post">Related Post</div>
+        <footer>Footer</footer>
+    </div>
+</body>
