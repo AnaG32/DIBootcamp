@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 1em;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box div{
+    background-color: yellowgreen;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin: 20px;
+}
+.center{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    
+}
+.center div {
+    margin: 50px;
+}
