@@ -1,0 +1,138 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+.banner {
+    background: url(./background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.logo {
+    width: 200px;
+    position: absolute;
+    top: 1%;
+    left: 3%;
+}
+.bannerText {
+    text-align: left;
+    color: white;
+    padding-top: 230px;
+    margin-left: 20%;
+}
+.bannerText h1 {
+    font-size: 60px;
+}
+.bannerText p {
+    font-size: 24px;
+}
+
+button {
+    background-color: rgba(0,0,0,0.4);
+    margin: 90px;
+    width: 150px;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 12px;
+    border-radius: 30px;
+    color: #a2e5f9;
+    border: 2px solid white;
+    transition: 0.3s;
+}
+button:hover {
+    width: 150px;
+    color: white;
+    transform: scale(1.1);
+    background-color: #a2e5f9;
+}
+.navbar {
+    width: auto;
+    right: 0;
+    top: 0;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    margin-right: 200px;
+}
+.navbar ul li {
+    list-style: none;
+    margin-right: 20px;
+    display: inline-block;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+}
+.navbar li {
+	display: inline-block;
+	justify-content: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+.navbar ul li a:hover {
+   color: #a2e5f9;
+   font-size: 20px;
+}
+
+.feature {
+    width: 100%;
+    padding: 70px 0;
+}
+.title {
+    text-align: center;
+    padding-bottom: 70px;
+}
+.title p {
+    margin: auto;
+    font-size: 20px;
+    color: #F9A2AA;
+    font-weight: bold;
+}
+.title h2 {
+    font-size: 50px;
+}
+.featureBox {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+.feature {
+    flex-basis: 50%;
+}
+.featureimg {
+    flex-basis: 50%;
+    margin: auto;
+}
+.featureimg img {
+    width: 70%;
+    border-radius: 16px;
+}
+.feature h1 {
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #F9A2AA;
+}
+.featuredesc {
+    display: flex;
+    align-items: center;
+    margin-bottom: ;
+}
+.featureicon {
+    width: 60px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    border-radius: 10px;
+    color: #F9A2AA;
+    border: 1px solid #F9A2AA;
+}
+.featuretext p {
+    padding: 0 30px;
+    text-align: initial;
+}

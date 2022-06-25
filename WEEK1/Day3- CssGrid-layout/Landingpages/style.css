@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Sans-Serif;
+}
+
+body {
+	background: url("./world-map.jpeg");
+    background-repeat: no-repeat;
+	width: 100%;
+}
+main {
+    margin: 20px;
+}
+.title {
+	text-align: center;
+}
+.container {
+	display: flex;
+	justify-content: space-evenly;
+}
+.container div {
+	text-align:center;
+	width: 180px;
+}
+.container h1 {
+	color: blueviolet;
+	margin: 10px;
+}
+.container p {
+	font-size: xx-small;
+}
+.containerGrid {
+	display: grid;
+    grid-template-columns: 33% 33% 33%;
+    column-gap: 0px;
+    grid-template-areas: 
+    "a b c";
+}
+.containerGrid p {	
+	margin: 0;
+}
+.columnLeft {
+	grid-area: a;
+	margin: 20px;
+}
+.columnCenter {
+	grid-area: b;
+	margin: 20px;
+	margin-top: 130px;
+}
+.columnRight {	
+	grid-area: c;
+	margin: 20px;
+	margin-top: 70px;
+}
+.paragraph1 {
+	border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
+	line-height : 25px;
+	background-color: rgb(235, 232, 232);
+	padding: 30px;
+	color: #787878;
+}
+.paragraph2 {
+	border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	position: relative;
+	line-height : 25px;
+	text-align:center;
+	color: white;
+	background-color: #EE9991 ;
+	padding: 40px;
+}
+.paragraph3 {
+	border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	position: relative;
+	line-height : 25px;
+	text-align:center;
+	color: white;
+	background-color: #7C65C5 ;
+	padding: 40px;
+}
+.paragraph4 {
+	border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	position: relative;
+	line-height : 25px;
+	text-align:center;
+	color: white;
+	background-color: #74C5D7 ;
+	padding: 40px;
+}
+.image img {
+	width: 50px;
+	border-radius: 50%;
+	position: absolute;
+    top: -25px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.paragraph2 p:nth-child(2n){
+	font-weight: bold;
+}
+.paragraph2 p:nth-child(3n){
+	font-size: small;
+}
+.paragraph3 p:nth-child(2n){
+	font-weight: bold;
+}
+.paragraph3 p:nth-child(3n){
+	font-size: small;
+}
+.paragraph4 p:nth-child(2n){
+	font-weight: bold;
+}
+.paragraph4 p:nth-child(3n){
+	font-size: small;
+}
