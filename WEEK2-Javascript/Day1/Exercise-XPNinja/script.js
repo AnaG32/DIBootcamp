@@ -44,7 +44,6 @@ console.log(true != true);
 // Exercise 2 //
 let userNum1 = prompt ("Write 2 numbers separated by commas");
 let newNum1 = userNum1.split(",");
-let result = ;
 console.log (newNum1);
 
 
