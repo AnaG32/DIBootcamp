@@ -41,12 +41,6 @@ console.log(true != true);
 // Actual: false
 
 
-// Exercise 2 //
-let userNum1 = prompt ("Write 2 numbers separated by commas");
-let newNum1 = userNum1.split(",");
-console.log (newNum1);
-
-
 
 // Exercise 3 //
 let usersentence = prompt ("Write a sentence containing the word: Nemo");
@@ -55,9 +49,9 @@ let position = sentence.indexOf("nemo");
 console.log(sentence);
 
 if(position >= 0) {
-    console.log("I found Nemo at " +  position + " position.");
+    document.write("I found Nemo at " +  position + " position.");
 } else {
-    console.log("Nemo not found");
+    document.write("Nemo not found");
 }
 
 

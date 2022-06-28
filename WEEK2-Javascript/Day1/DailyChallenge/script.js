@@ -1,6 +1,9 @@
 //Exercise 1 //
 
 let fruits = ["Banana", "Apples", "Oranges", "Blueberries"];
+let index = fruits.indexOf("Banana");
+console.log(index);
+
 fruits.shift();
 console.log(fruits);
 
