@@ -58,15 +58,19 @@ if (number % 2 == 0) {
 // 5. For example, if there are 5 users, it should display.:name_user1, name_user2 and 3 more are online.
 
 
-let users = ["Lea123", "Princess45", "cat&doglovers", "helooo@000"];
+let users = ["Lea123 ", "Princess45 ", "cat&doglovers ", "helooo@000 "];
 let online = users.length;
+console.log(online);
 
 if (online == 0 ) {
     console.log("no one is online");
-} else if (online === 1) {
-    console.log(users[1] + " is online");
-} else if (online === 2) {
+} 
+if (online == 1) {
+    console.log(users[0] + " is online");
+} 
+if (online == 2) {
     console.log(users[0] + users[1] + " are online");
-} else if (online > 2) {
-    console.log (users[0] + users[1] + online + " are online");
+} 
+if (online > 2) {
+    console.log (users[0] + users[1] + " and other " + (online - 2) + " are online");
 }

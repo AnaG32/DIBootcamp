@@ -1,4 +1,5 @@
-//Instructions
+//Daily Challenge
+
 //1. Create a variable called sentence. The value of the variable should be a string that contains the words “not” and “bad”.
 //  For example, “The movie is not that bad, I like it”.
 //2. Create a variable called wordNot where it’s value is the first appearance (ie. the position) of the substring “not” (from the sentence variable).
@@ -7,4 +8,17 @@
 //  For example, the result here should be : “The movie is good, I like it”
 //5. If the word “bad” does not come after “not” or the words are not in the sentence, console.log the original sentence.
 
-let sencente = 
+let sentence = "The movie is not that bad";
+let not = "not";
+let bad = "bad";
+let sentencelength = bad.length;
+
+let notindex = sentence.indexOf("not");
+let badindex = sentence.indexOf("bad");
+
+
+if (badindex > notindex) {
+    console.log(sentence.substring(0, notindex-1) + ' good ' + sentence.substring(badindex+3, sentence.length));
+} else {
+    console.log (sentence);
+}
