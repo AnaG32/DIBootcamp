@@ -47,5 +47,5 @@ function myBill() {
     }
     return sum;
 }
-console.log("your bill is " + myBill());
+console.log("the total is " + myBill());
 console.log(stock);

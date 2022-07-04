@@ -5,11 +5,15 @@
 
 let year1 = prompt("Enter first year (YYYY)");
 let year2 = prompt("Enter second year (YYYY)");
+let year1parse = parseInt(year1);
+let year2parse = parseInt(year2);
 
-let result = (year2-year1)/2;
-if (result) {
+
+let year3 = year1parse-year2parse;
+console.log(year3);
+let result = year2parse + year3;
+
     console.log(result);
-}
 
 // Exercise 2 //
 
@@ -33,7 +37,7 @@ if (codelength == 5) {
 
 // Exercise 3 //
 
-let word = promt('write a word');
+let word = prompt('write a word');
 
 word = word.replaceAll('a', 1)
             .replaceAll('e', 2)
