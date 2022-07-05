@@ -35,7 +35,12 @@ if (codelength == 5) {
 
 
 
-// Exercise 3 //
+// Exercise 3 : Secret Word //
+
+// Use Regular Expressions
+// Prompt the user for a word and save it to a variable.
+// Delete all the vowels of the word and console.log the result.
+// Bonus: Replace the vowels with another character and console.log the result
 
 let word = prompt('write a word');
 
