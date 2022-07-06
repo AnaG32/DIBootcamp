@@ -5,15 +5,13 @@
 
 let numbers = [123, 8409, 100053, 333333333, 7];
 let divisibles = [];
- 
-function divisible(numbers) {
-    for (i = 0, len = numbers.length; i < len; i++) {
-        if(numbers[i] % 3 == 0) {
-            console.log(true);
-        } 
-        else {
-            console.log(false);
-        }
+
+for (i = 0, len = numbers.length; i < len; i++) {
+    if ((numbers[i] % 3) == 0){
+        document.write("true"+"<br>");
+    }
+    else {
+        document.write("false"+"<br>");
     }
 }
 
@@ -25,6 +23,7 @@ function divisible(numbers) {
 //      Hint: You don’t need to use a for loop, just look up the statement if ... in
 // 3. If the name is not in the object, console.log: "Hi! I'm a guest."
 
+let user = prompt("write your name");
 let guestList = {
     randy: "Germany",
     karla: "France",
@@ -33,14 +32,9 @@ let guestList = {
     sam: "Argentina"
 }
 
-let user = prompt("write your name");
-let list;
-
-if (list in guestList) {
-    console.log("Hi! I'm " + user + " and I'm from [country].");
+if (user in guestList) {
+    alert("Hi! I'm " + user + " and I'm from " + guestList[user]);
 }
 else {
-    console.log("Hi! I'm a guest.");
+    alert("Hi! I'm a guest.");
 }
-
-

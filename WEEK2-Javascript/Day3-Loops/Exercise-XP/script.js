@@ -63,12 +63,7 @@ console.log(str.typeof);
 let num= Number(str);
 console.log(num);
 
-let n = 0;
-do {
-    prompt("Write another number");
-    n++;
-  }
-  while (num <= 10);
+
 
 // Exercise 4: Building Management //
 // 1. Copy and paste the above object to your Javascript file.
