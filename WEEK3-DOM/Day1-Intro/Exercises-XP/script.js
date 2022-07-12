@@ -11,12 +11,6 @@ let elemul = document.getElementsByClassName('list')[1];
 console.log(elemdiv);
 console.log(elemul);
 
-document.querySelector(".list").lastElementChild.innerHTML = "Richard";
-
-document.getElementById("container").nextElementSibling.firstElementChild.innerHTML = "Ana";
-document.getElementById("container").nextElementSibling.nextElementSibling.firstElementChild.innerHTML = "Ana";
-
-document.getElementById("container").nextElementSibling.nextElementSibling.children[1].remove();
 
 // Bonus - Using Javascript:
 // 5. Add a class called student_list to both of the <ul>'s.
@@ -41,19 +35,6 @@ let divcolor = document.getElementById('container');
 divcolor.style.backgroundColor = "lightblue";
 divcolor.style.padding = "2rem";
 divcolor.style.border = "solid 2px darkblue";
-
-let x = document.querySelector("body").children[4].firstElementChild;
-x.style.visibility = "hidden";
-
-let y = document.querySelector("body").children[4].lastElementChild;
-y.style.border = "2px solid red"
-
-document.querySelector("body").style.fontSize = "18px"
-
-if (a.style.backgroundColor = "lightBlue") {
-    alert(`Hello ${x.innerHTML} and ${y.innerText}`)
-}
-
 
 
 // Exercise 3: Change The Navbar // 
@@ -88,7 +69,6 @@ console.log(document.getElementById("socialNetworkNavigation").firstElementChild
 
 // Exercise 4 : My Book List //
 
-// Take a look at this link for help.
 // The point of this challenge is to display a list of two books on your browser.
 // In the body of the HTML page, create an empty div:
 //      <div class="listBooks"></div>
@@ -106,4 +86,25 @@ console.log(document.getElementById("socialNetworkNavigation").firstElementChild
 //      Example: HarryPotter written by JKRolling.
 //      The width of the image has to be set to 100px.
 //      If the book is already read. Set the color of the book’s details to red.
+
+let allBooks = [];
+let book1 = 
+{
+    title: "Lord of the Flies",
+    author: "William Golding",
+    image: "url = https://www.amazon.com/-/es/William-Golding/dp/0399501487" ,
+    alreadyRead: true
+}
+
+let book2 = 
+{   title: "Pride and Prejudice",
+    author: "Jane Austen",
+    image: "url= https://www.amazon.es/Pride-Prejudice-Jane-Austen/dp/1503290565",
+    alreadyRead: false,
+}
+
+allBooks.push(book1, book2);
+console.log(allBooks);
+
+
 
