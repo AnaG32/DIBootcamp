@@ -87,21 +87,22 @@ console.log(document.getElementById("socialNetworkNavigation").firstElementChild
 //      The width of the image has to be set to 100px.
 //      If the book is already read. Set the color of the book’s details to red.
 
-let allBooks = [];
-let book1 = 
-{
-    title: "Lord of the Flies",
-    author: "William Golding",
-    image: "url = https://www.amazon.com/-/es/William-Golding/dp/0399501487" ,
-    alreadyRead: true
-}
+let allBooks = [
+    {
+        title: "Lord of the Flies",
+        author: "William Golding",
+        image: "url = https://www.amazon.com/-/es/William-Golding/dp/0399501487" ,
+        alreadyRead: true
+    }
 
-let book2 = 
-{   title: "Pride and Prejudice",
-    author: "Jane Austen",
-    image: "url= https://www.amazon.es/Pride-Prejudice-Jane-Austen/dp/1503290565",
-    alreadyRead: false,
-}
+
+    {   
+        title: "Pride and Prejudice",
+        author: "Jane Austen",
+        image: "url= https://www.amazon.es/Pride-Prejudice-Jane-Austen/dp/1503290565",
+        alreadyRead: false,
+    }
+];
 
 allBooks.push(book1, book2);
 console.log(allBooks);
