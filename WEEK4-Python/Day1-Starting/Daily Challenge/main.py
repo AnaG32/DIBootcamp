@@ -30,3 +30,5 @@ userlist = list(user)
 random.shuffle(userlist)
 result = ''.join(userlist)
 print(result)
+
+
