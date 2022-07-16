@@ -22,5 +22,5 @@ print(mat_modified)
 mat_modified = [list(chars) for chars in mat_modified]
 print(mat_modified)
 
-res = list(zip(mat_modified))
-print(res)
+result = list(zip(mat_modified))
+print(result)

@@ -117,6 +117,49 @@ while 'quit' not in toppingList:
     topping.append(toppingList)
     print('ok, adding {} to the pizza'.format(toppingList))
 
-totalPrice = 10 + 2.5 * len(topping)
+totalPrice = 10 + (2.5 * len(topping))
 print('so all of ur toppings are: {} \n and the price is {} \n'.format(topping, totalPrice))
 
+
+
+# Exercise 9: Cinemax
+# A movie theater charges different ticket prices depending on a person’s age.
+# if a person is under the age of 3, the ticket is free.
+# if they are between 3 and 12, the ticket is $10.
+# if they are over the age of 12, the ticket is $15.
+# Ask a family the age of each person who wants a ticket.
+# Store the total cost of all the family’s tickets and print it out.
+
+
+age = (input("Write the age of each person who wants a ticket, write separate it by a space"))
+family_age = list(age.split(" "))
+print(family_age)
+
+total_price = 0
+
+for i in family_age:
+    j = int(i)
+    if j < 3:
+        total_price += 0 
+    if j <= 3 and j <= 12:
+        total_price += 10
+    if j >= 12:
+        total_price += 15
+
+print("The ticket price is:  $", total_price)
+
+
+# A group of teenagers are coming to your movie theater and want to watch a movie that is restricted for people between the ages of 16 and 21.
+# Given a list of names, write a program that asks teenager for their age, if they are not permitted to watch the movie, remove them from the list.
+# At the end, print the final list.
+
+customers = ["Ana", "Alex", "Liam", "John"]
+age_list = int()
+
+for i in customers:
+    print(i)
+    age_list = int(input('{}, how old are you? \n'.format(i)))
+    if age_list not in range (16,22):
+        customers.append(i)
+    
+print('so the customers permitted: {} \n'.format(customers))
