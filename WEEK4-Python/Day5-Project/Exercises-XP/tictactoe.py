@@ -13,7 +13,6 @@ winner = None
 
 def play():
     global winner
-    print("Start Game")
     display_board()
 
     for i in range(5):
@@ -38,7 +37,6 @@ def play():
             break
         else:
             print("Anyone is the winner - play again")
-
 
 def check_win():
     global winner
@@ -83,7 +81,7 @@ def player_input(value):
             write_down = True
         else:
             print("Choose an empty position")
-
+            
     board[position] = value
     display_board()
 
