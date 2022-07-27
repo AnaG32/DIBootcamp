@@ -10,6 +10,26 @@
 // Display the name of the person who has the largest BMI.
 
 
+let person1 = {
+	FullName:"Ana",
+	Mass: 82,
+	Height: 160,
+	calc_BMI:function() {
+		return (this.Mass / this.Height / this.Height) * 10000;	
+    }
+};
+
+let person2 = {
+	FullName:"Din",
+	Mass: 163,
+	Height: 158,
+	calc_BMI:function() {
+		return (this.Mass / this.Height / this.Height) * 10000;
+	}
+};
+console.log(person1.calc_BMI());
+
+
 // Exercise 2 : Grade Average // 
 // - This Exercise is trickier then the others. You have to think about its structure before you start coding.
 // - You must use functions to complete this exercise, to do so take a look at tomorrow’s lesson.

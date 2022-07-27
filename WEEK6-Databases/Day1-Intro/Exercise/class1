@@ -1,4 +1,3 @@
-
 create table finances (
     id int primary key, 
     paydate date,

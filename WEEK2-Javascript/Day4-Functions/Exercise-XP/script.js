@@ -12,7 +12,7 @@ Call the function twice with the following arguments:
 infoAboutPerson("David", 45, "blue")
 infoAboutPerson("Josh", 12, "yellow")
 */
-/*
+
 function infoAboutMe() {
     console.log('My name is Ana, im 32 years old and i love staking and travel around the world')
 }
@@ -36,7 +36,7 @@ John created a simple tip calculator to help calculate how much to tip when he a
 4.Console.log the tip amount and the final bill (bill + tip).
 5.Call the calculateTip() function.
 */
-/*
+
 function calculateTip() {
     let bill = prompt("What is the amount of your bill?:  ");
     bill = Number(bill);
@@ -55,7 +55,7 @@ function calculateTip() {
     }
 }
 console.log(calculateTip());
-*/
+
 
 // Exercise 3 : Find The Numbers Divisible By 23 //
 /*
@@ -65,7 +65,7 @@ Console.log all the numbers divisible by 23.
 At the end, console.log the sum of all numbers that are divisible by 23.
 Bonus: Add a parameter divisor to the function.
 */
-/*
+
 function isDivisible(divisor) {
     let div = 0;
     for (let i=0; i < 500 ; i++) {
@@ -79,7 +79,7 @@ function isDivisible(divisor) {
 
 isDivisible(3);
 isDivisible(45);
-*/
+
 
 
 // Exercise 4 //
@@ -93,7 +93,7 @@ If the item is in stock find out the price in the prices object.
 Call the myBill() function.
 Bonus: If the item is in stock, decrease the item’s stock by 1.
 */
-/*
+
 let stock = { 
     "banana": 6, 
     "apple": 0,
@@ -143,7 +143,7 @@ function myBill() {
 }
 console.log("the total is " + myBill());
 console.log(stock);
-*/
+
 
 // Exercise 5 : What’s In My Wallet ? //
 /*
@@ -160,7 +160,7 @@ Change will always be represented in the following order: quarters, dimes, nicke
     A nickel is 0.05
     A penny is 0.01
 */
-/*
+
 function changeSum(wallet) {
     let changeValue = [0.25, 0.10, 0.05, 0.01]
     let sum = 0;
@@ -182,7 +182,7 @@ function changeEnough(itemPrice, amountOfChange) {
 
 console.log(changeEnough(14.11, [2,100,0,0])); 
 console.log(changeEnough(0.75, [0,0,20,5]));
-*/
+
 
 // Exercise 6 : Vacations Costs //
 /*
