@@ -87,25 +87,41 @@ console.log(document.getElementById("socialNetworkNavigation").firstElementChild
 //      The width of the image has to be set to 100px.
 //      If the book is already read. Set the color of the book’s details to red.
 
-let allBooks = [
-    {
+
+let allBooks = [];
+
+    let book1 =  {
         title: "Lord of the Flies",
         author: "William Golding",
         image: "url = https://www.amazon.com/-/es/William-Golding/dp/0399501487" ,
         alreadyRead: true
-    }
-
-
-    {   
+        }
+    let book2 = {   
         title: "Pride and Prejudice",
         author: "Jane Austen",
         image: "url= https://www.amazon.es/Pride-Prejudice-Jane-Austen/dp/1503290565",
         alreadyRead: false,
     }
-];
 
 allBooks.push(book1, book2);
 console.log(allBooks);
 
+let library = document.createElement("TABLE");
+    library.setAttribute("id", "library");
+    document.body.appendChild(library);
+
+    shelves = document.createElement("TR");
+    shelves.setAttribute("id", "shelves");
+    document.getElementById("library").appendChild(shelves);
+
+let books = document.createElement("TD");
+let fBookOnTheShelf  = document.createTextNode(`${book1.title} writen by ${book1.author}`);
+
+    books.appendChild(fBookOnTheShelf);
+    document.getElementById("shelves").appendChild(books);
+
+let sBookOnTheShelf = document.createTextNode(`${book2.title} writen by ${book2.author}`);
+    books.appendChild(sBookOnTheShelf);
+    document.getElementById("shelves").appendChild(books);
 
 

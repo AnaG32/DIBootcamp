@@ -1,0 +1,25 @@
+
+create table finances (
+    id int primary key, 
+    paydate date,
+    electricity float,
+    water float, 
+    payedby varchar(50)
+);
+
+insert into finances (id, paydate, electricity, water, payedby) 
+values (1, '2020-01-01', 200.0, 115.5, 'Yossi');
+
+insert into finances values 
+(2, '2020-02-11', 100.2, 160.2, 'Ana'),
+(3, '2020-03-08', 110.5, 135.7, 'Ayala'),
+(4, '2020-04-07', 120.2, 157.4, 'Moshe'),
+(5, '2020-05-08', 136.6, 190.0, 'John'),
+(6, '2020-06-12', 144.0, 205.3, 'Vanessa');
+
+
+select count(id) from finances where payedby = 'Yossi';
+select sum(water) from finances where payedby = 'Yossi';
+select avg(electricity) from finances where payedby = 'Yossi';
+
+select avg(electricity), payedby from finances group by payedby;

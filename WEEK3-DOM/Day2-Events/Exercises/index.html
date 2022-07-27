@@ -2,19 +2,23 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Class</title>
+        <title>Exercise 1</title>
     </head>
     <body>
-        <form onsubmit="sendData(event)" method="get" name="form1">
-            <input type="text" name="username" value="" id="username" placeholder="username">
-            <input type="text" name="password" value="" id="password" placeholder="password">
-             <textarea name="texta" rows="8" cols="30" > Hello</textarea>
-            <select class="" name=" ">
+        <table id="sampleTable" border = "1"> 
+            <tr>
+                <td>Row1 cell1</td> 
+                <td>Row1 cell2</td>
+            </tr> 
+            <tr>
+                <td>Row2 cell1</td> 
+                <td>Row2 cell2</td>
+            </tr> 
+            </table>
+            
+            <input type="button" onclick="insertRow()" value="Insert row">  
 
-                
-            </select>
-            <input type="submit" name="" value="Submit">
-          </form>
+            <button id="jsstyle">Style</button> 
 
     <script src="./script.js"></script>
     </body>
